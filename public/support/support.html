@@ -1,0 +1,13 @@
+{{test}}
+
+<div ng-repeat="val in numbers">{{val.$id}}
+	<ul>
+		<li ng-repeat="msg in val">{{msg.body}} - {{msg.date_created}}</li>
+
+	</ul>
+</div>
+
+<h3>send a message:</h3>
+<form ng-submit="bindText()">
+	<input type="text" placeholder="type here" ng-model="inputText"/>
+</form>
